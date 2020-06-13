@@ -1,0 +1,28 @@
+button,
+.btn {
+  transition: all ease-in-out 0.2s;
+  //  todo: add awesome hover and active
+  &:hover,
+  &:focus {
+    background-color: $color-b;
+    color: $color-d;
+  }
+
+  &:active {
+    background-color: $color-b;
+    color: $color-d;
+  }
+}
+
+a {
+  transition: all ease-in-out 0.2s;
+  color: $primary-type-color;
+  &:hover,
+  &:focus {
+    color: $color-b;
+  }
+
+  &:active {
+    color: $color-b;
+  }
+}

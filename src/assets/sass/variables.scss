@@ -1,0 +1,53 @@
+/***
+**
+** BREAK POINTS
+**
+**
+***/
+
+$mobile-break: 800px;
+
+/***
+**
+** COLOR
+**
+**
+***/
+
+$color-a: #f08971;
+$color-b: #1d1e2a;
+$color-d: #3b837c;
+$color-e: #e3cea8;
+$color-f: #221a1a;
+$color-g: #4a3b3b;
+
+$primary-type-color: $color-f;
+// $secondary-type-color:
+
+// Light theme
+$bg-primary: $color-b;
+$bg-secondary: $color-e;
+
+$primary-type-color: $color-e;
+$secondary-type-color: $color-g;
+
+// Dark theme
+
+// Grey Theme
+
+/***
+**
+** TYPOGRAPHY
+**
+**
+***/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+// Typography
+$base-font-family: "Noto Sans JP", "Open Sans", sans-serif;
+$header-font-family: "Abril Fatface", cursive;
+$header-font-base-mobile: 18px;
+$header-font-base: 18px;
+// Type hierarchy scaler
+$type-scaler: 1.15;

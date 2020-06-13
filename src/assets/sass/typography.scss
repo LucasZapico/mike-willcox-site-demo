@@ -1,0 +1,338 @@
+html,
+body {
+  font-family: $base-font-family;
+  color: $primary-type-color;
+}
+
+.yotta,
+.zetta,
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: $header-font-family;
+  line-height: 1.4;
+  margin: 0px;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 1.3rem;
+}
+
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+table,
+hr {
+  line-height: 1.5;
+}
+
+.zetta {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler *
+    $type-scaler * $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+}
+
+h1,
+.h1,
+.exa {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler *
+    $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+}
+
+h2,
+.h2,
+.peta {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler *
+    $type-scaler * $type-scaler * $type-scaler;
+}
+
+h3,
+.h3,
+.tera {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler *
+    $type-scaler * $type-scaler;
+}
+
+h4,
+.h4,
+.giga {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler *
+    $type-scaler;
+}
+
+h5,
+.h5,
+.mega {
+  font-size: $header-font-base-mobile * $type-scaler * $type-scaler;
+}
+
+.kilo-1 {
+  font-size: $header-font-base-mobile * $type-scaler;
+}
+
+h6,
+.h6,
+.kilo {
+  font-size: $header-font-base-mobile;
+}
+
+.milli {
+  font-size: $header-font-base-mobile/$type-scaler;
+}
+
+.micro {
+  font-size: 0.5rem;
+}
+
+em {
+  font-style: italic;
+}
+
+blockquote {
+  background-color: darken($color-d, 5%);
+  margin: 0px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-left: solid 5px darken($color-d, 20%);
+}
+
+pre {
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+}
+
+code {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 95%;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background: #faf8f0;
+  color: #333333;
+}
+
+// code {
+//   display: block;
+//   padding: 0.5em 1em;
+//   border: 1px solid #bebab0;
+// }
+
+@media screen and (min-width: 700px) {
+  body {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: $header-font-family;
+    }
+
+    .zetta {
+      font-size: $header-font-base * $type-scaler * $type-scaler * $type-scaler *
+        $type-scaler * $type-scaler * $type-scaler * $type-scaler;
+    }
+
+    h1,
+    .h1,
+    .exa {
+      font-size: $header-font-base * $type-scaler * $type-scaler * $type-scaler *
+        $type-scaler * $type-scaler * $type-scaler;
+    }
+
+    h2,
+    .h2,
+    .peta {
+      font-size: $header-font-base * $type-scaler * $type-scaler * $type-scaler *
+        $type-scaler * $type-scaler;
+    }
+
+    h3,
+    .h3,
+    .tera {
+      font-size: $header-font-base * $type-scaler * $type-scaler * $type-scaler *
+        $type-scaler;
+    }
+
+    h4,
+    .h4,
+    .giga {
+      font-size: $header-font-base * $type-scaler * $type-scaler * $type-scaler;
+    }
+
+    h5,
+    .h5,
+    .mega {
+      font-size: $header-font-base * $type-scaler * $type-scaler;
+    }
+
+    .kilo-1 {
+      font-size: $header-font-base * $type-scaler;
+    }
+
+    h6,
+    .h6,
+    .kilo {
+      font-size: $header-font-base;
+    }
+
+    .milli {
+      font-size: 1 / $type-scaler;
+    }
+
+    .micro {
+      font-size: 0.5rem;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+    em {
+      font-style: italic;
+    }
+
+    blockquote {
+      background-color: darken($color-d, 5%);
+
+      padding: 0.5rem;
+      border-left: solid 15px darken($color-d, 20%);
+    }
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+input,
+textarea,
+blockquote,
+code,
+.char-100 {
+  max-width: 620px;
+}
+
+// breakpoints
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  font-size: 16px;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 620px;
+  }
+
+  .char-80 {
+    max-width: 520px;
+  }
+
+  .char-50 {
+    max-width: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  font-size: 18px;
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 800px;
+  }
+
+  .char-80 {
+    max-width: 700px;
+  }
+
+  .char-50 {
+    max-width: 410px;
+  }
+  .char-prose {
+    max-width: 420px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2200px) {
+  font-size: 24px;
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 1070px;
+  }
+
+  .char-80 {
+    max-width: 900px;
+  }
+
+  .char-50 {
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 2800px) {
+  font-size: 36px;
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  input,
+  textarea,
+  blockquote,
+  code,
+  .char-100 {
+    max-width: 1600px;
+  }
+
+  .char-80 {
+    max-width: 1340px;
+  }
+
+  .char-50 {
+    max-width: 820px;
+  }
+}
